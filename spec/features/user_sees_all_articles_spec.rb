@@ -9,6 +9,7 @@ describe 'user sees all articles' do
       visit '/articles'
 
       expect(page).to have_link(article_1.title)
+      expect(page).to have_link("Create a New Article")
       expect(page).to have_content(article_2.title)
     end
   end
