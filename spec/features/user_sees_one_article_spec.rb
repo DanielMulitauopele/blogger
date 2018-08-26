@@ -9,7 +9,7 @@ describe 'user sees one article' do
       click_link article_1.title
 
       expect(page).to have_content(article_1.title)
-      expect(page).to have_content(article_1.Body)
+      expect(page).to have_content(article_1.body)
     end
   end
 end
